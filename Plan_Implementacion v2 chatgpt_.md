@@ -505,6 +505,202 @@ La aplicación **Olivos Verdes** debe terminar como:
 
 ---
 
+# 📂 Estructura de Carpetas — lib/
+
+```text
+lib/
+│
+├── main.dart
+├── app.dart
+│
+├── core/
+│   ├── constants/
+│   │   ├── app_colors.dart
+│   │   ├── app_sizes.dart
+│   │   ├── app_strings.dart
+│   │   └── firebase_constants.dart
+│   │
+│   ├── theme/
+│   │   ├── app_theme.dart
+│   │   ├── light_theme.dart
+│   │   └── dark_theme.dart
+│   │
+│   ├── routes/
+│   │   ├── app_router.dart
+│   │   ├── route_names.dart
+│   │   └── route_guards.dart
+│   │
+│   ├── utils/
+│   │   ├── validators.dart
+│   │   ├── formatters.dart
+│   │   ├── helpers.dart
+│   │   └── connectivity_helper.dart
+│   │
+│   ├── services/
+│   │   ├── firebase_service.dart
+│   │   ├── storage_service.dart
+│   │   ├── auth_service.dart
+│   │   └── firestore_service.dart
+│   │
+│   └── widgets/
+│       ├── custom_button.dart
+│       ├── custom_textfield.dart
+│       ├── loading_widget.dart
+│       ├── error_widget.dart
+│       └── app_bar_widget.dart
+│
+├── models/
+│   ├── user_model.dart
+│   ├── fruit_model.dart
+│   ├── category_model.dart
+│   ├── offer_model.dart
+│   ├── cart_model.dart
+│   └── order_model.dart
+│
+├── providers/
+│   ├── auth_provider.dart
+│   ├── product_provider.dart
+│   ├── category_provider.dart
+│   ├── cart_provider.dart
+│   ├── offer_provider.dart
+│   └── order_provider.dart
+│
+├── repositories/
+│   ├── auth_repository.dart
+│   ├── product_repository.dart
+│   ├── category_repository.dart
+│   ├── offer_repository.dart
+│   ├── cart_repository.dart
+│   └── order_repository.dart
+│
+├── features/
+│   │
+│   ├── splash/
+│   │   ├── screens/
+│   │   │   └── splash_screen.dart
+│   │   └── widgets/
+│   │
+│   ├── auth/
+│   │   ├── screens/
+│   │   │   ├── login_screen.dart
+│   │   │   ├── register_screen.dart
+│   │   │   └── forgot_password_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── login_form.dart
+│   │   │   └── register_form.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── home/
+│   │   ├── screens/
+│   │   │   └── home_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── home_banner.dart
+│   │   │   ├── categories_section.dart
+│   │   │   ├── featured_products.dart
+│   │   │   └── offers_slider.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── products/
+│   │   ├── screens/
+│   │   │   ├── products_screen.dart
+│   │   │   └── product_detail_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── product_card.dart
+│   │   │   ├── product_grid.dart
+│   │   │   └── product_filter.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── categories/
+│   │   ├── screens/
+│   │   │   └── categories_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   └── category_card.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── cart/
+│   │   ├── screens/
+│   │   │   └── cart_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── cart_item.dart
+│   │   │   └── cart_summary.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── checkout/
+│   │   ├── screens/
+│   │   │   └── checkout_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── payment_section.dart
+│   │   │   └── address_section.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── profile/
+│   │   ├── screens/
+│   │   │   └── profile_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   ├── profile_header.dart
+│   │   │   └── orders_history.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   ├── offers/
+│   │   ├── screens/
+│   │   │   └── offers_screen.dart
+│   │   │
+│   │   ├── widgets/
+│   │   │   └── offer_card.dart
+│   │   │
+│   │   └── controllers/
+│   │
+│   └── admin/
+│       ├── screens/
+│       │   ├── admin_dashboard.dart
+│       │   ├── manage_products.dart
+│       │   ├── manage_categories.dart
+│       │   ├── manage_offers.dart
+│       │   └── manage_orders.dart
+│       │
+│       ├── widgets/
+│       │   ├── admin_drawer.dart
+│       │   ├── dashboard_card.dart
+│       │   └── product_form.dart
+│       │
+│       └── controllers/
+│
+├── firebase/
+│   ├── firebase_options.dart
+│   └── firebase_config.dart
+│
+└── shared/
+    ├── widgets/
+    │   ├── custom_card.dart
+    │   ├── empty_state.dart
+    │   ├── custom_loader.dart
+    │   └── custom_dialog.dart
+    │
+    ├── animations/
+    │   ├── fade_animation.dart
+    │   └── slide_animation.dart
+    │
+    └── extensions/
+        ├── context_extensions.dart
+        └── string_extensions.dart
+```
+
+
+
 # ✅ Objetivo Final
 
 Construir una plataforma digital elegante y eficiente para la gestión completa de la frutería 🍏 "Olivos Verdes", ofreciendo la mejor experiencia posible tanto para clientes como administradores.
