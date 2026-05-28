@@ -75,7 +75,7 @@ La aplicación debe dividirse en módulos:
 | Verde oliva | Principal |
 | Verde claro | Acciones positivas |
 | Blanco | Limpieza visual |
-| Beige suave | Fondo secundario |
+| Rosa suave | Fondo secundario |
 | Amarillo fruta | Promociones |
 
 ---
